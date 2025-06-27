@@ -6,7 +6,7 @@ public Boolean isPassed(Boolean passedExam, Boolean passedAssignments, Boolean p
     if(passedExam==true)
         count++;
     if(passedAssignments==true)
-        count++
+        count++;
     if(passedProject==true)
         count++;
     
