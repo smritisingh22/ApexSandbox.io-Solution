@@ -10,7 +10,7 @@ public Boolean isPassed(Boolean passedExam, Boolean passedAssignments, Boolean p
     if(passedProject==true)
         count++;
     
-    if(count==2)
+    if(count==2 || count>2)
         return true;
     else
         return false;
