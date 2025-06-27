@@ -1,0 +1,13 @@
+public String aOrAn(String word) {
+    //code here
+    String fullWord;
+    if(word.startsWith('a','e','i','o','u'))
+    {
+        fullWord='an'+word;
+    }
+    else
+    {
+        fullWord='a'+word;
+    }
+    return fullWord;
+}
