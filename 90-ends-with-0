@@ -1,7 +1,7 @@
 public Boolean isEndWithZero(Integer num){
      //code here
 
-     Ineteger  d=Math.mod(num,1);
+     Ineteger  d=Math.mod(num,10);
 
      if(d==0)
       return true;
