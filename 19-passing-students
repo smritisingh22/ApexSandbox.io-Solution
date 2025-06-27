@@ -1,0 +1,18 @@
+public Boolean isPassed(Boolean passedExam, Boolean passedAssignments, Boolean passedProject) {
+    //code here
+
+    Integer count=0;
+
+    if(passedExam==true)
+        count++;
+    if(passedAssignments==true)
+        count++
+    if(passedProject==true)
+        count++;
+    
+    if(count==2)
+        return true;
+    else
+        return false;
+    
+}
