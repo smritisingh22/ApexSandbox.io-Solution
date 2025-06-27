@@ -3,11 +3,11 @@ public String aOrAn(String word) {
     String fullWord;
     if(word.startsWith('a') || word.startsWith('e') || word.startsWith('i') || word.startsWith('o') || word.startsWith('u'))
     {
-        fullWord='an'+ word;
+        fullWord='an'+' '+ word;
     }
     else
     {
-        fullWord='a'+ word;
+        fullWord='a'+' '+ word;
     }
     return fullWord;
 }
