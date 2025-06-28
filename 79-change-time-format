@@ -1,6 +1,24 @@
 public String changeTimeFormat(String strTime) {
     //code here
 
-    String t1=strTime.substring(0,2);
+    List<String> parts = strTime.split(':');
+    Integer hr, min;
+        if (parts.size() != 2) {
+            return 'Invalid time format';
+        }
+    hr = Integer.valueOf(parts[0]);
+    min = Integer.valueOf(parts[1]);
+
+     String period = (hr >= 12) ? 'PM' : 'AM';
+
+      Integer hr12 = hr % 12;
+        if (hr12 == 0) {
+            hr12 = 12;
+        }
+
+    String hrStr = (hour12 < 10) ? '0' + String.valueOf(hour12) : String.valueOf(hour12);
+    String minStr = (minute < 10) ? '0' + String.valueOf(minute) : String.valueOf(minute);
+        
+        return hrStr + ':' + minStr + ' ' + period;
 
 }
