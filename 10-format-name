@@ -1,23 +1,22 @@
 public String formatName(String firstName, String lastName) {
 //code here
 
-/*
 if(!String.isBlank(firstName) && !String.isBlank(lastName))
     {
         return lastName+', '+firstName;
     }
-    else if(!String.isBlank(firstName))
+    else if(String.isBlank(firstName) || firstName==null)
     {
         return lastName;
     }
-    else if(!String.isBlank(lastName))
+    else if(String.isBlank(lastName) || lastName==null)
     {
         return firstName;
     }
     else
         return '';
-        */
-
+    
+/*
         Boolean hasFirst = !String.isBlank(firstName);
         Boolean hasLast = !String.isBlank(lastName);
         
@@ -30,4 +29,5 @@ if(!String.isBlank(firstName) && !String.isBlank(lastName))
         } else {
             return '';
         }
+        */
 }
