@@ -8,8 +8,11 @@ public Integer nextPrime(Integer num) {
             }
             candidate++;
         }
+    }
+   
 }
-    public static Boolean isPrime(Integer n) {
+
+public static Boolean isPrime(Integer n) {
         if (n <= 1) {
             return false;
         }
@@ -27,7 +30,4 @@ public Integer nextPrime(Integer num) {
         }
         return true;
     }
-
-
-  
-
+   
