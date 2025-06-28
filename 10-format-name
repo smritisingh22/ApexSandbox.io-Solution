@@ -1,6 +1,25 @@
 public String formatName(String firstName, String lastName) {
 //code here
 
+String fullName;
+if(!String.isBlank(firstName) && !String.isBlank(lastName))
+    {
+        fullName=lastName+', '+firstName;
+    }
+else if(String.isBlank(firstName) && !String.isBlank(lastName))
+    {
+        fullName= lastName;
+    }
+else if(String.isBlank(lastName) && !String.isBlank(firstName))
+{
+    fullName=firstName;
+}
+else
+{
+    fullName='';
+}
+return fullName;
+
 /*if(!String.isBlank(firstName) && !String.isBlank(lastName))
     {
         return lastName+', '+firstName;
@@ -31,9 +50,10 @@ public String formatName(String firstName, String lastName) {
         }
         */
 
+/*
 String fullName = '';
 
-if(lastName != null && lastName != '' && firstName != null && firstName != ''){
+if((lastName != null && lastName != '') && (firstName != null && firstName != '')){
    fullName = lastName + ', ' + firstName;
 }else if((lastName == null || lastName == '') && firstName != null && firstName != ''){
     fullName = firstName;
@@ -43,4 +63,5 @@ else if((firstName == null || firstName == '') && lastName != null && lastName !
 }
     
 return fullName;
+*/
 }
