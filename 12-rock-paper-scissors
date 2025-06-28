@@ -1,7 +1,7 @@
 public Integer rockPaperScissors(String player1, String player2) {
     //code here
 
-    Integer num1=1; num2=2, num0=0
+    Integer num1=1, num2=2, num0=0;
     if(player1=='rock' && player=='paper')
         return num2;
     else if(player='scissors' && player2='paper')
