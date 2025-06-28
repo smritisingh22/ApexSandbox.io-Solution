@@ -2,7 +2,7 @@ public Boolean isPrime(Integer num) {
     //code here
 
     Boolean primeFlag;
-    if(num = 2 || num = 3){
+    if(num == 2 || num == 3){
         primeFlag=true;
     }else{
         for(Integer i=2;i<=(num/2);i++)
