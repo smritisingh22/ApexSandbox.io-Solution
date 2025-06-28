@@ -16,8 +16,8 @@ public String changeTimeFormat(String strTime) {
             hr12 = 12;
         }
 
-    String hrStr = (hour12 < 10) ? '0' + String.valueOf(hour12) : String.valueOf(hour12);
-    String minStr = (minute < 10) ? '0' + String.valueOf(minute) : String.valueOf(minute);
+    String hrStr = (hr12 < 10) ? '0' + String.valueOf(hr12) : String.valueOf(hr12);
+    String minStr = (min < 10) ? '0' + String.valueOf(min) : String.valueOf(min);
         
         return hrStr + ':' + minStr + ' ' + period;
 
