@@ -6,7 +6,9 @@ public Id insertStudent(String name, String email) {
     c.Name=name;
     c.apxio__Email__c=email;
     insert c;
+
     return c.Id;
+    
 
    /* stList.add(c);
 
