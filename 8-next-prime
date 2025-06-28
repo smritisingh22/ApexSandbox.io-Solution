@@ -1,5 +1,14 @@
 public Integer nextPrime(Integer num) {
     //code here
+
+    Integer candidate = num + 1;
+        while (true) {
+            if (isPrime(candidate)) {
+                return candidate;
+            }
+            candidate++;
+        }
+}
     public static Boolean isPrime(Integer n) {
         if (n <= 1) {
             return false;
@@ -19,15 +28,6 @@ public Integer nextPrime(Integer num) {
         return true;
     }
 
-    // Method to get the next prime number greater than num
-    public static Integer nextPrime(Integer num) {
-        Integer candidate = num + 1;
-        while (true) {
-            if (isPrime(candidate)) {
-                return candidate;
-            }
-            candidate++;
-        }
-    }
 
-}
+  
+
