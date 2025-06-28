@@ -1,0 +1,17 @@
+public Integer fibonacci(Integer n) {
+    //code here
+
+     if (n == 1 || n == 2) {
+            return 1;
+        }
+    
+    Integer prev1=1, prev2=1;
+    Integer curr=0;
+    for(Integre i=3;i<n;i++)
+    {
+        curr=prev1+prev2;
+        prev2=prev1;
+        prev1=curr;
+    }
+    return curr;
+}
