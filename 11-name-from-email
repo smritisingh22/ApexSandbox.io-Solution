@@ -5,6 +5,7 @@ public String nameFromEmail(String email) {
     String fName=semail.substringBefore('.');
     String str1=semail.substringAfter('.');
     string lName=str1.substringBefore('@');
-
+    fname=fname.capitalize();
+    lName=lName.capitalize();
     return fname +' '+lName;
 }
