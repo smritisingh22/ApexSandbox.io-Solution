@@ -1,0 +1,4 @@
+public Id insertCourse(String name, String details, Integer credits) {
+    // code here
+    apxio__Course__c stCourse=new apxio__Course__c();
+}
