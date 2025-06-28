@@ -13,6 +13,8 @@ if(!String.isBlank(firstName) && !String.isBlank(lastName))
     {
         return firstName;
     }
+    else if(String.isBlank(firstName) || firstName==null || String.isBlank(lastName) || lastName==null )
+        return '';
     else
         return '';
 }
