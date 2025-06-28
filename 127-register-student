@@ -16,6 +16,6 @@ public String registerStudent(String name, String phone, String email) {
                 LIMIT 1
                 ];
         
-    return reg;
+    return reg.apxio__Registration_Number__c;
 
 }
