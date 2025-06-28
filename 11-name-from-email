@@ -1,7 +1,7 @@
 public String nameFromEmail(String email) {
     //code here
 
-  // String semail= email.toLowerCase();
+    String semail= email.toLowerCase();
     String fName=semail.substringBefore('.');
     String str1=semail.substringAfter('.');
     string lName=str1.substringBefore('@');
