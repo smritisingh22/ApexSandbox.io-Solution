@@ -1,14 +1,15 @@
 public Integer rockPaperScissors(String player1, String player2) {
     //code here
 
+    Integer num1=1; num2=2, num0=0
     if(player1=='rock' && player=='paper')
-        return 2;
+        return num2;
     else if(player='scissors' && player2='paper')
-        return 1;
+        return num1;
     else if(player1=='rock' && player2=='scissors')
-        return 1;
+        return num1;
     else if(payer1==payer2)
-        return 0;
+        return num0;
     else
-        return 0;
+        return num0;
 }
