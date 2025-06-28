@@ -5,11 +5,11 @@ if(!String.isBlank(firstName) && !String.isBlank(lastName))
     {
         return lastName+', '+firstName;
     }
-    else if(String.isBlank(firstName) || firstName==null)
+    else if(!String.isBlank(firstName))
     {
         return lastName;
     }
-    else if(String.isBlank(lastName) || lastName==null)
+    else if(!String.isBlank(lastName))
     {
         return firstName;
     }
