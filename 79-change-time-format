@@ -11,7 +11,7 @@ public String changeTimeFormat(String strTime) {
 
      String period = (hr >= 12) ? 'PM' : 'AM';
 
-      Integer hr12 = hr % 12;
+      Integer hr12 = Math.mod(hr,12);
         if (hr12 == 0) {
             hr12 = 12;
         }
