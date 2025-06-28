@@ -13,6 +13,7 @@ public String registerStudent(String name, String phone, String email) {
                 apxio__Registration_Number__c 
                 FROM apxio__Student__c
                 WHERE Id=:stId
+                LIMIT 1
                 ];
         
     return reg;
