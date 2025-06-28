@@ -7,7 +7,7 @@ public Integer fibonacci(Integer n) {
     
     Integer prev1=1, prev2=1;
     Integer curr=0;
-    for(Integer i=3;i<n;i++)
+    for(Integer i=3;i<=n;i++)
     {
         curr=prev1+prev2;
         prev2=prev1;
