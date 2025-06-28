@@ -9,7 +9,7 @@ public Id insertCourse(String name, String details, Integer credits) {
 
     stCourse.Name=name;
     stCourse.apxio__Course_Details__c=details;
-    stCourse.apxio__Credits__c=String.valoueOf(credits);
+    stCourse.apxio__Credits__c=String.valueOf(credits);
 
     insert stCourse;
     return stCourse.Id;
