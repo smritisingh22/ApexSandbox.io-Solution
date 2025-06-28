@@ -32,15 +32,15 @@ public String formatName(String firstName, String lastName) {
         */
 
 String fullName = '';
-Boolean hasFirst = !String.isBlank(firstName);
-Boolean hasLast = !String.isBlank(lastName);
-if(hasFirst && hasLast){
-    fullName = lastName+', '+firstName;
-}else if(hasFirst){
+
+if(lastName != null && lastName != '' && firstName != null && firstName != ''){
+   fullName = lastName + ', ' + firstName;
+}else if((lastName == null || lastName == '') && firstName != null && firstName != ''){
     fullName = firstName;
 }
-else if(hasLast){
+else if((firstName == null || firstName == '') && lastName != null && lastName != ''){
     fullName = lastName;
 }
+    
 return fullName;
 }
