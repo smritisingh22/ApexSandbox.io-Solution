@@ -19,6 +19,7 @@ public Boolean isPrime(Integer num) {
         }
     }*/
 
+    /*
     Integer factorCount = 0;
     for(Integer i=1; i<= num; i++){
         if(Math.mod(num,i)==0){
@@ -32,4 +33,16 @@ public Boolean isPrime(Integer num) {
     }
 
     return primeFlag;
+    */
+
+    for(Integer i=1; i<=num;i++)
+    {
+        if(Math.mod(num,1)==0 && Math.mod(num,num)==0)
+        {
+            return true;
+        }
+        else{
+            return false;
+        }
+    }
 }
