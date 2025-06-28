@@ -1,6 +1,6 @@
 public String changeTimeFormat(String strTime) {
     //code here
 
-    String t1=strTime.split(':');
+    String t1=strTime.substring(0,2);
 
 }
