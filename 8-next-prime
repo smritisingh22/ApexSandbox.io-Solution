@@ -28,5 +28,3 @@ public Integer nextPrime(Integer num) {
             candidate++;
         }
     }
-   
-    }
