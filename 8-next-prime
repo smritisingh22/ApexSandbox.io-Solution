@@ -12,7 +12,7 @@ public Integer nextPrime(Integer num) {
             } else if (Math.mod(candidate, 2) == 0) {
                 isPrime = false;
             } else {
-                Integer sqrtC = Math.floor(Math.sqrt(candidate));
+                Double sqrtC = Math.floor(Math.sqrt(candidate));
                 for (Integer i = 3; i <= sqrtC; i += 2) {
                     if (Math.mod(candidate, i) == 0) {
                         isPrime = false;
