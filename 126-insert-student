@@ -1,0 +1,19 @@
+public Id insertStudent(String name, String email) {
+    // code here
+    List<apxio__Student__c> stList=new List<apxio__Student__c>();
+
+    apxio__Student__c c=new apxio__Student__c();
+    c.Name=name;
+    c.apxio__Email__c=email;
+    stList.add(c);
+
+    if(stList.size()>0)
+    {
+        insert stList;
+        for(apxio__Student__c d:stList)
+        {
+                return d.Id;
+        }
+    }
+
+}
