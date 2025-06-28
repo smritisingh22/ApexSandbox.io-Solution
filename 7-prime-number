@@ -1,11 +1,12 @@
 public Boolean isPrime(Integer num) {
     //code here
 
-    Boolean primeFlag=false;
+    Boolean primeFlag;
     for(Integer i=2;i<=(num/2);i++)
     {
         if(Math.mod(num,i)==0)
         {
+            primeFlag=false;
             break;
         }
         else
