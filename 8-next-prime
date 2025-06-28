@@ -3,30 +3,30 @@ public Integer nextPrime(Integer num) {
 
     Integer candidate = num + 1;
         while (true) {
-            if (isPrime(candidate)) {
+            // Check if candidate is prime
+            Boolean isPrime = true;
+            if (candidate <= 1) {
+                isPrime = false;
+            } else if (candidate == 2) {
+                isPrime = true;
+            } else if (Math.mod(candidate, 2) == 0) {
+                isPrime = false;
+            } else {
+                Integer sqrtC = Math.floor(Math.sqrt(candidate));
+                for (Integer i = 3; i <= sqrtC; i += 2) {
+                    if (Math.mod(candidate, i) == 0) {
+                        isPrime = false;
+                        break;
+                    }
+                }
+            }
+            
+            if (isPrime) {
                 return candidate;
             }
+            
             candidate++;
         }
     }
-
-
-public static Boolean isPrime(Integer n) {
-        if (n <= 1) {
-            return false;
-        }
-        if (n == 2) {
-            return true;
-        }
-        if (Math.mod(n, 2) == 0) {
-            return false;
-        }
-        Integer sqrtN = Math.floor(Math.sqrt(n));
-        for (Integer i = 3; i <= sqrtN; i += 2) {
-            if (Math.mod(n, i) == 0) {
-                return false;
-            }
-        }
-        return true;
-    }
    
+    }
