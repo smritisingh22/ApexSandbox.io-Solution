@@ -2,7 +2,7 @@ public Boolean isPrime(Integer num) {
     //code here
 
     Boolean primeFlag;
-    if(num == 2 || num == 3){
+    /*if(num == 2 || num == 3){
         primeFlag=true;
     }else{
         for(Integer i=2;i<=(num/2);i++)
@@ -17,6 +17,17 @@ public Boolean isPrime(Integer num) {
                 primeFlag=true;
             }
         }
+    }*/
+
+    Integer factorCount = 0;
+    for(Integer i=1; i<= num; i++){
+        if(Math.mod(num,i)==0){
+            factorCount++;
+        }
     }
+    if(factorCount == 2){
+        primeFlag = true;
+    }
+
     return primeFlag;
 }
