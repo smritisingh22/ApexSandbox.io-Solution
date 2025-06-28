@@ -15,7 +15,6 @@ public Boolean isPrime(Integer num) {
             else
             {
                 primeFlag=true;
-                break;
             }
         }
     }
