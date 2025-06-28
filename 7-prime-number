@@ -27,6 +27,8 @@ public Boolean isPrime(Integer num) {
     }
     if(factorCount == 2){
         primeFlag = true;
+    }else{
+        primeFlag = false;
     }
 
     return primeFlag;
